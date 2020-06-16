@@ -1,0 +1,713 @@
+
+
+/******************************/
+/*      General Styles     */
+/******************************/
+body,
+html {
+    width: 100%;
+	height: 100%;
+}
+
+body, p {
+	color: #626262; 
+	font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+}
+
+.p-large {
+	font: 400 1rem/1.5rem "Raleway", sans-serif;
+}
+
+.p-small {
+	font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+}
+
+.p-heading {
+	margin-bottom: 3.875rem;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.25rem;
+}
+
+
+
+h1 {
+	color: #626262;
+	font: 700 3rem/3.5rem "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+	color: #393939;
+	font: 700 2.45rem/2.75rem "Raleway", sans-serif;
+}
+
+h3 {
+	color: #393939;
+	font: 700 1.75rem/2rem "Raleway", sans-serif;
+}
+
+h4 {
+	color: #393939;
+	font: 700 1.375rem/1.875rem "Raleway", sans-serif;
+}
+
+h5 {
+	color: #393939;
+	font: 700 1.125rem/1.625rem "Raleway", sans-serif;
+}
+
+h6 {
+	color: #393939;
+	font: 700 1rem/1.5rem "Raleway", sans-serif;
+}
+
+a {
+	color: #626262;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #626262;
+	text-decoration: underline;
+}
+
+a.turquoise {
+	color: rgb(92, 12, 221);
+}
+
+a.white {
+	color: #fff;
+}
+
+
+.turquoise {
+	color: #626262;
+    font-size: 2.55rem;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #00bfd8;
+	border-radius: 2rem;
+	background:linear-gradient(to right, #000099 59%, #3333cc 100%);
+	color: #fff;
+	font: 700 0.95rem/0 "Raleway", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	background-color: transparent;
+	color: #00bfd8;
+	text-decoration: none;
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid #00bfd8;
+	border-radius: 2rem;
+	background:linear-gradient(to right, #000099 59%, #3333cc 100%);
+	color: #fff;
+	font: 700 0.95rem/0 "Raleway", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #00bfd8;
+	text-decoration: none;
+}
+
+
+.form-group {
+	position: relative;
+	margin-bottom: 1.25rem;
+}
+
+
+.label-control {
+	position: absolute;
+	top: 0.87rem;
+	left: 1.375rem;
+	color: #626262;
+	opacity: 1;
+	font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+	cursor: text;
+	transition: all 0.2s ease;
+}
+
+
+.form-control-input {
+	display: block; 
+	width: 100%;
+	padding-top: 1.0625rem;
+	padding-bottom: 0.0625rem;
+	padding-left: 1.3125rem;
+	border: 1px solid #c4d8dc;
+	border-radius: 0.25rem;
+	background-color: #fff;
+	color: #626262;
+	font: 400 0.875rem/1.875rem "Raleway", sans-serif;
+	transition: all 0.2s;
+	
+}
+
+
+.form-control-input:focus
+{
+	border: 1px solid #a1a1a1;
+	outline: none; /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+ {
+	border: 1px solid #a1a1a1;
+}
+
+.form-control-submit-button {
+	display: inline-block;
+	width: 30%;
+	height: 3.125rem;
+	border: 1px solid #00bfd8;
+	border-radius: 1.5rem;
+	background:linear-gradient(to right, #000099 59%, #3333cc 100%);
+	color: #fff;
+	font: 700 0.95rem/1.75rem "Raleway", sans-serif;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+	background-color: transparent;
+	color: #00bfd8;
+}
+
+
+
+
+
+/*************************/
+/*      Preloader     */
+/*************************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #00bfd8;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+
+/**************************/
+/*      Navigation     */
+/**************************/
+.navbar-custom {
+	background-color: #fff;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    width: 12.4375rem;
+	height: 4.222rem;
+}
+
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #393939;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+	color:dodgerblue;
+}
+
+Dropdown Menu 
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	/*min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #fff;
+}
+
+.navbar-custom .dropdown-item {
+	color: #393939;
+	text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+	background-color: #fff;
+}
+
+.navbar-custom .dropdown-item .item-text {
+	font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+}
+
+.navbar-custom .dropdown-item:hover .item-text {
+	color: #00bfd8;
+}
+
+.navbar-custom .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+/* end of dropdown menu */
+
+
+
+.navbar-custom .navbar-toggler {
+	border: none;
+	color: #393939;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+
+
+/*********************/
+/*     Header     */
+/*********************/
+.header {
+	background-color: #fff;
+    background: url('../img/BgShape.svg') right center no-repeat;
+    background-size: cover; 
+        background-position: 100%;
+    
+}
+
+.header .header-content {
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+.header .text-container {
+	margin-bottom: 4rem;
+}
+.turquoise{
+    color:#fff;
+}
+.header h1 {
+	margin-bottom: 1.125rem;
+	font-size: 2.5rem;
+	line-height: 3.125rem;
+    color: #fff;
+}
+
+.header .p-large {
+	margin-bottom: 1.875rem;
+    color: #fff;
+}
+
+/*************************/
+/*     Who We Are   */
+/*************************/
+.basic-2 {
+	padding-top: 3.75rem;
+	padding-bottom: 4rem;
+}
+
+.basic-2 .image-container {
+	margin-bottom: 4rem;
+    
+}
+
+
+.basic-2 h2 {
+	margin-bottom: 1.375rem;
+}
+
+.basic-2 .list-unstyled .fas {
+	color: #00bfd8;
+	line-height: 1.375rem;
+}
+
+.basic-2 .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.basic-2 .btn-solid-reg {
+	margin-top: 3.925rem;
+    margin-left: 2.666rem;
+}
+
+
+
+/************************/
+/*     Offers     */
+/************************/
+.cards-1 {
+	padding-top: 4rem;
+	padding-bottom: 1.625rem;
+	text-align: center;
+}
+
+.cards-1 h2 {
+	margin-bottom: 1rem;
+}
+
+.cards-1 .card {
+	max-width: 21rem;
+	margin-right: auto;
+	margin-bottom: 4.5rem;
+	margin-left: auto;
+	padding: 3.25rem 2rem 2rem 2rem;
+	border: 1px solid #c4d8dc;
+	border-radius: 0.5rem;
+	background: transparent;
+    box-shadow: 0 4px 8px 0 rgba(102, 99, 99, 0.2), 0 6px 20px 0 rgba(88, 87, 87, 0.19);
+}
+
+.cards-1 .card-image {
+	width: 6rem;
+	height: 6rem;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-left: auto;
+}
+
+.cards-1 .card-title {
+	margin-bottom: 0.875rem;
+}
+
+.cards-1 .card-body {
+	padding: 0;
+}
+
+
+
+
+
+
+
+/***********************/
+/*      Pricing     */
+/***********************/
+.cards-2 {
+	padding-top: 3rem;
+	padding-bottom: 2.75rem;
+	text-align: center;
+    background-color: rgba(235, 229, 245, 0.698);
+}
+
+.cards-2 h2 {
+	margin-bottom: 1rem;
+}
+
+.cards-2 .card {
+	display: block;
+	max-width: 19.5rem;
+	margin-right: auto;
+	margin-bottom: 6rem;
+	margin-left: auto;
+	border: 1px solid #c4d8dc;
+	border-radius: 0.5rem;
+	vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(102, 99, 99, 0.2), 0 6px 20px 0 rgba(88, 87, 87, 0.19);
+}
+
+.cards-2 .card .card-body {
+	padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+}
+
+.cards-2 .card .card-title {
+	margin-bottom: 0.625rem;
+	color: #393939;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	text-align: center;
+}
+
+.cards-2 .card .card-subtitle {
+	margin-bottom: 1.75rem;
+}
+
+.cards-2 .card .cell-divide-hr {
+	height: 1px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: none;
+	background-color: #c4d8dc;
+}
+
+.cards-2 .card .price {
+	padding-top: 0.875rem;
+	padding-bottom: 1.5rem;
+}
+
+.cards-2 .card .value {
+	color: #00bfd8;
+	font-weight: 700;
+	font-size: 3.5rem;
+	line-height: 4rem;
+	text-align: center;
+}
+
+.cards-2 .card .currency {
+	margin-right: 0.375rem;
+	color: #00bfd8;
+	font-size: 1.5rem;
+	vertical-align: 56%;
+}
+
+.cards-2 .card .frequency {
+	margin-top: 0.25rem;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+
+.cards-2 .card .btn-solid-reg:hover {
+	background-color: #fff;
+}
+
+
+
+
+
+/***********************/
+/*      Contact     */
+/***********************/
+.form-2 {
+	padding-top: 7rem;
+	padding-bottom: 6.25rem;
+	background-size: cover;
+    height: 400px;
+}
+
+.form-2 h2 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+
+
+
+/**********************/
+/*     16. Footer     */
+/**********************/
+.footer {
+    background-image: url("../img/MaskGroup1.svg") ;
+	padding-top: 4.625rem; 
+	padding-bottom: 0.5rem;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    
+   
+    
+    
+}
+.footer .container{
+    color:#fff;
+  
+}
+
+.footer .footer-col {
+	width: 25%;
+    margin-bottom: 2.25rem;
+    
+}
+
+.footer h4 {
+	margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2.2222rem;
+    
+}
+.footer p{
+    color:#fff;
+    font-size: 1.999rem;
+    font-weight: bold;
+    padding-top: 1.222rem;
+}
+.footer .list-unstyled .fas {
+	color: #00bfd8;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+}
+
+.footer .list-unstyled .media {
+	margin-left: 0.625rem;
+    color:#fff;
+    font-size: 0.78888rem;
+}
+
+.footer .fa-stack {
+	margin-bottom: 0.75rem;
+	margin-right: 0.5rem;
+	font-size: 1.22222rem;
+}
+
+.footer .fa-stack .fa-stack-1x {
+    color: #fff;
+	transition: all 0.2s ease;
+    
+}
+
+.footer .fa-stack .fa-stack-2x {
+	color: #00bfd8;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+	color: #45273b;
+}
+
+.icons a i{
+    font-size: 0.866rem;
+    padding-right: 15.666rem;
+}
+
+
+
+/*************************/
+/*     17. Copyright     */
+/*************************/
+.copyright {
+	padding-top: 1rem;
+	padding-bottom: 0.375rem;
+	text-align: center;
+    
+}
+
+.copyright .p-small {
+	padding-top: 1.375rem;
+	border-top: 1px solid #142ce0;
+	opacity: 0.7;
+    color: #142ce0;
+    font-weight: bold;
+}
+.copyright .p-small a{
+    color: #45273b;
+    font-weight: bold;
+}
+
+
+/**********************************/
+/*      Back To Top Button     */
+/**********************************/
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 1.875rem;
+	background: #142ce0 url("../img/up-arrow.png") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background-color:#45273b; 
+}
+
+
+
+
